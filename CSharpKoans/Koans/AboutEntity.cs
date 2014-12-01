@@ -19,17 +19,6 @@ namespace CSharpKoans.Koans
         
 
     }
-    class DbInitializer : DropCreateDatabaseAlways<Context>
-    {
-        protected override void Seed(Context context)
-        {
-            context.Actors.Add(new Actor()
-            {
-                Name = "Tom",
-                Surname = "Cruise"
-            });
-        }
-    }
     public class Actor
     {
         [Key]
